@@ -1,0 +1,65 @@
+body {
+  max-width: 90%;
+}
+.container {
+  max-width: 100%;
+}
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card-container:hover {
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
+}
+
+.card-container:hover::-webkit-scrollbar {
+  display: block;
+  height: 8px;
+}
+
+.card-container:hover::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.card-wrapper {
+  flex: 0 0 auto;
+  width: calc(33.333% - 1rem);
+  margin-right: 1rem;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.card {
+  border: none;
+}
+.notification-card {
+  display: flex;
+  align-items: center;
+}
+
+.notification-card .notifikasi {
+  flex-grow: 1;
+}
+.rbc-calendar {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.custom-card {
+  transition: background-color 0.3s ease;
+  background-color: #4535c1;
+}
+
+.custom-card:hover {
+  background-color: #21015e;
+}

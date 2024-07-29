@@ -1,12 +1,24 @@
-import React from "react"
-import Discuss from "../Components/Discuss/Discuss"
+import React from "react";
 
-const Diskusi = () => {
-    return (
-        <>
-        < Discuss />
-        </>
-    )
-}
+import Chat from "../Components/Discuss/Chat";
 
-export default Discuss
+const Discuss = () => {
+  return (
+    <>
+      <div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <Diskusi />
+            </div>
+            <div class="col">
+              <Chat />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Discuss;
